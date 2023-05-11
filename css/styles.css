@@ -1,0 +1,919 @@
+body {
+  margin: 0px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Menú Header ----------------------------------*/
+header nav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  background-color: rgba(82, 82, 82, 0.895);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  position:fixed;
+  top: 0px;
+}
+  nav img{
+    width: 300px;
+  }
+
+  nav ul{
+    padding: 0%;
+    display: flex;
+    list-style:none;
+  }
+    nav ul#ul1{
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 326px;
+      max-width: 30%;
+    }
+    nav ul#ul2{
+      margin-right: 5%;
+      margin-left: 5%;
+      width: 326px;
+      max-width: 30%;
+    }
+      nav li{
+        display: flex;
+        border-color: white;
+      }
+
+    nav ul a{
+      text-decoration: none;
+      color: aliceblue;
+      text-shadow: 3px 2px 3px rgb(95, 95, 106);
+    }
+      nav ul a:hover{
+        text-shadow: 3px 2px 3px rgb(61, 61, 68);
+        color: rgb(205, 214, 221);
+      }
+/* Color página selecionada */
+#c {
+  color: #e09900;
+}
+/* Color WIP */
+#wip {
+  color: #cf8e00d2;
+}
+
+/* Desplegables del menú */
+.material-symbols-outlined {
+  font-size: 20px;
+}
+  nav div.desplegable span {
+    font-size: 15px;
+  }
+nav div.desplegable button {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  color: aliceblue;
+}
+  .desplegable {
+    display: inline-block;
+    text-shadow: 3px 2px 3px rgb(61, 61, 68);
+  }
+    .desplegable-cont {
+      display: none;
+      position: absolute;
+    }
+  nav li div.desplegable:hover button {
+    text-shadow: 3px 2px 3px rgb(61, 61, 68);
+    color: rgb(205, 214, 221);
+  }
+    nav li div.desplegable:hover div.desplegable-cont {
+      display: block;
+    }
+nav li div.desplegable .desplegable-cont a.a-desplegable {
+  display: block;
+  padding: 5px;
+  background-color: aliceblue;
+  /* color: rgb(206, 160, 23);  */
+  color: rgb(99, 99, 99);
+  /* font-weight:lighter; */
+  text-shadow: none;
+  border: 5px aliceblue solid;
+}
+nav li div.desplegable .desplegable-cont a.a-desplegable:hover {
+  background-color: rgb(216, 224, 231);
+  border-style:solid;
+  border: 5px aliceblue solid;
+}
+/* Cambiar esquinas del desplegable */
+nav li div.desplegable .desplegable-cont a.a-desplegable#a1 {
+  border-top: 4px rgb(206, 160, 23) solid;
+  border-radius: 5px 5px 0px 0px;
+}
+nav li div.desplegable .desplegable-cont a.a-desplegable#a2 {
+  border-radius: 0px 0px 0px 0px;
+}
+  nav li:nth-child(1) div.desplegable .desplegable-cont a.a-desplegable#a2,
+  nav li:nth-child(2) div.desplegable .desplegable-cont a.a-desplegable#a2 {
+    border-radius: 0px 0px 5px 5px;
+  }
+nav li div.desplegable .desplegable-cont a.a-desplegable#a3 {
+  border-radius: 0px 0px 5px 5px;
+}
+
+
+/* Main -------------------------------- */
+main {
+  margin-top:6vmin;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: rgb(57, 64, 90);
+}
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+hr {
+    border: rgb(206, 160, 23);
+    background-color: rgb(206, 160, 23);
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Título */
+main section.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Título index */
+main section.titulo_index {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:max-content;
+}
+  main section.titulo_index img#img1 {
+    width: 100%;
+    max-width: 1920px;
+    position: absolute;
+    z-index: -20;
+    top: 0px;
+  }
+    main section.titulo_index div.d_index {
+      margin: 11vmin auto;
+      }
+      main section.titulo_index div div:nth-child(1) {
+        text-align: center;
+        width: 80%;
+        max-width: 900px;
+        margin: 20px auto;
+        margin-bottom: 20%;
+      }
+        main section.titulo_index h1 {
+          color: aliceblue;
+          font-weight: 500;
+          font-size: 30px;
+        }
+        main section.titulo_index div.d_index img#img2 {
+          width: 80%;
+          top: 30px;
+          margin: auto;
+        }
+
+main section.titulo_d {
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: aliceblue;
+  height: 250px;
+}
+main section.titulo_d p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin: auto 12%;
+}
+  main section.titulo_d p span {
+    font-size: 12px;
+  }
+main section.titulo_d p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Play',Helvetica,Arial,Lucida,sans-serif;
+  margin-top: 1%;
+}
+
+/* Título fabricación artesanal */
+main section.titulo_servicios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:max-content;
+}
+  main section.titulo_servicios img.servicios {
+    max-width: 100%;
+    position: absolute;
+    z-index: -20;
+    top: 0px;
+  }
+  main section.titulo_servicios h1 {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 50px;
+  }
+  main section.titulo_servicios a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 2px aliceblue solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+  main section.titulo_servicios a span {
+    display: none;
+  }
+    main section.titulo_servicios a:hover span {
+      display: inline;
+      font-size: 15px;
+    }
+  main section.titulo_servicios div div div {
+    margin-top: 20px;
+  }
+    main section.titulo_servicios div.d_servicios {
+      margin: 29vmin auto;
+      }
+      main section.titulo_servicios div div:nth-child(1) {
+        text-align: center;
+        width: 80%;
+        max-width: 900px;
+        margin: 20px auto;
+      }
+
+/* Título reparación y mantenimiento */
+main section.titulo_servicios#rep_serv img.servicios {
+  width: 100%;
+  max-width: 1920px;
+}
+
+/* Título pintura y modificación */
+main section.titulo_pintura {
+  margin-top: 6%;
+  text-align: center;
+}
+
+/* Título contacto */
+main section.titulo_contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:max-content;
+}
+  main section.titulo_contacto img.contacto {
+    max-width: 100%;
+    position: absolute;
+    z-index: -20;
+    top: 0px;
+  }
+  main section.titulo_contacto h1 {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 55px;
+    font-family: 'Aclonica', sans-serif;
+  }
+  main section.titulo_contacto div.d_contacto {
+    margin: 19vmin auto;
+  }
+
+/* "Cont" Contenido de servicios */
+main section.cont {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 80%; */
+  text-align: center;
+}
+  main section.cont p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  main section.cont span {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3%;
+  }
+    main section.cont div {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      align-items: center;
+      justify-content: space-around;
+    }
+      main section.cont div article {
+        height: 100%;
+      }
+        main section.cont div article img {
+          width: 100%;
+        }
+        main section.cont div article span {
+          display: inline-block;
+          color: #406f99;
+          font-size: 25px;
+          margin-top: 5px;
+        }
+        main section.cont div article p {
+          font-size: 18px;
+          text-align:center;
+        }
+        main section.cont div article hr {
+          width: 80%;
+          height: 3px;
+          margin-top: 5px;
+        }
+/* "Cont" Contenido de servicios reparación y mantenimiento */
+main section.titulo_servicios#rep_serv ~ section.cont {
+  margin-top: 7%;
+}
+  /* Set up de servicios reparación y mantenimiento */
+  main section.setup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+    main section.setup div:nth-child(1) {
+      margin-right: 2%;
+    }
+    main section.setup div:nth-child(2) {
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+      main section.setup div h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+      }
+      main section.setup div h2 b {
+        color: #4a80af;
+      }
+      main section.setup div p {
+        margin-bottom: 10px;
+        padding-bottom: 1em;
+        font-size: 100%;
+        font-weight: 600;
+        font-size: 22px;
+        font-family: 'Play',Helvetica,Arial,Lucida,sans-serif;
+      }
+      main section.setup div a {
+        text-decoration: none;
+        color: aliceblue;
+        font-family: 'Montserrat Alternates',Helvetica,Arial,Lucida,sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        background-color: #e09900;
+        border: 1px #e09900 solid;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+        main section.setup div a span {
+          display: none;
+        }
+          main section.setup div a:hover span {
+            display: inline;
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+/* "Cont" Contenido de pintura y modificación */
+main section.titulo_pintura ~ section.cont {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+/* "Cont" Contenido de contacto */
+main section.cont#contacto {
+width: 100%;
+margin-top: 3%;
+}
+
+/* Formulario de contacto */
+main section.cont form#contacto {
+  /* width: 100%; */
+  font-family: 'Montserrat Alternates',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 25px;
+  margin: auto 10%;
+}
+  main section.cont form#contacto input,
+  main section.cont form#contacto select,
+  main section.cont form#contacto textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+    border:#be8200b7 2px solid;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+  }
+    main section.cont form#contacto textarea {
+      height: 80px;
+      min-height: 80px;
+      max-height: 300px;
+      max-width: 100%;
+      min-width: 100%;
+    }
+  main section.cont form#contacto label#politica {
+    font-size: 16px;
+  }  
+    main section.cont form#contacto input#politica {
+      width: 16px;
+      height: 16px;
+      margin: auto 0px;
+    }
+  main section.cont form#contacto input#enviar {
+    width: 20%;
+    height: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #be8200b7;
+  }
+    main section.cont form#contacto input#enviar:hover {
+      background-color: rgb(250, 171, 0);
+      width: 19.4%;
+      height: 33px;
+    }
+  main section.cont form#contacto span {
+    font-size: 20px;
+    margin: 0px;
+    color: rgb(109, 0, 0);
+  }
+
+/* Mapa contato */
+main section.map {
+  width: 80%;
+  margin: 3% auto;
+}
+  main section.map div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    main section.map div h3 {
+      font-size: 35px;
+    }
+    main section.map div hr {
+      border: rgb(206, 160, 23);
+      background-color: rgb(206, 160, 23);
+      border-radius: 10px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      width: 40%;
+      height: 3px;
+      margin-top: 5px;
+    }
+    main section.map div img {
+      width: 25%;
+      margin: 1% auto;
+      margin-bottom: 3%;
+    }
+    main section.map div p {
+      margin: 1% auto;
+    }
+
+/* Pintura */
+main section.pintura {
+  display: flex;
+  flex-direction: column;
+}
+  main section.pintura img#img1 {
+    width: 100%;
+  }
+  main section.pintura p {
+    text-align: center;
+    width: 85%;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main section.pintura img#img2 {
+    width: 60%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main section.pintura iframe {
+    margin: 3% auto;
+    width: 40%;
+  }
+  main section.pintura p:nth-last-child(1) {
+    font-family: 'Montserrat Alternates',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    font-size: 180%;
+  }
+
+
+main section div#cont_frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: rgb(10, 10, 10);
+  }
+    main section div#cont_frase p {
+      color: aliceblue;
+      font-size: 30px;
+    }
+
+/* Fabric */
+main section.fabric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  main section.fabric hr {
+    width: 60%;
+    height: 5px;
+  }
+  main section.fabric article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+    main section.fabric article h2 {
+      font-size: 25px;
+    }
+    main section.fabric article div {
+      display: grid;
+      grid-template-columns: 17% 17% 17% 17%;
+      justify-content: space-evenly;
+      width: 95%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+      main section.fabric article.bajos div{
+        display: grid;
+        grid-template-columns: 22.5% 22.5% 22.5%;
+        justify-content: space-evenly;
+        width: 80%;
+      }
+    main section.fabric article span {
+      font-size:medium;
+      font-weight: 500;
+    }
+      main section.fabric article div img {
+        max-width: 100%;
+        width: 445px;
+      }
+      main section.fabric article.bajos div img {
+        max-width: 100%;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+/* Contacto */
+main section.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(10, 10, 10);
+  color: aliceblue;
+  height: 200px;
+  font-size: 120%;
+}
+  main section.contacto a {
+    border: 5px rgb(206, 160, 23) solid;
+    border-radius: 13px;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  main section.contacto a span {
+    font-size: 65%;
+    display: none;
+  }
+    main section.contacto a:hover span {
+      display: inline-block;
+    }
+
+/* Opciones */
+main section.opc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+  main section.opc a {
+    margin: 5%;
+  }
+
+/* "Cont_d" descripción de contenido, en index.html */
+main section.opc_d {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+  main section.opc_d img{
+    margin: auto;
+    width: 600px;
+    margin: 15px auto;
+  }
+  main section.opc_d div {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+  }
+    main section.opc_d div article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto 5%;
+    }
+      main section.opc_d div h2 {
+        text-align: center;
+      }
+      main section.opc_d div p {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Play',Helvetica,Arial,Lucida,sans-serif;
+      }
+      main section.opc_d div article img {
+        max-width: 200px;
+        margin: auto;
+        margin-top: 15px;
+      }
+
+/* Stock guitarras/bajos */
+main section.stock {
+  margin-top: 1%;
+  display: flex;
+  align-items:center ;
+  flex-direction: column;
+  justify-content: center;
+}
+  main section.stock article p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+  }
+  main section.stock article img:hover {
+    width: 595px;
+  }
+
+/* Merch */
+main section.merch {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  main section.merch p {
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+  }
+    main section.merch article {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+      main section.merch article h4 {
+        text-align: center;
+        font-size: 23px;
+      }
+      main section.merch article p {
+        margin: 10px auto;
+      }
+        main section.merch article p:nth-child(3) {
+          font-size: 27px;
+        }
+        main section.merch article p:nth-child(4) {
+          font-size: 16px;
+        }
+        main section.merch article p:nth-child(5) {
+          font-size: 13px;
+        }
+      main section.merch article div {
+        margin: auto;
+        width: 40%; 
+      }
+        main section.merch article div img {
+          width: 100%;
+        }
+      main section.merch article a {
+        display: table;
+        margin: auto;
+        border: 5px rgb(206, 160, 23) solid;
+        background-color: rgb(206, 160, 23);
+        border-radius: 13px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: aliceblue;
+      }
+      main section.merch article a:hover {
+        display: table;
+        margin: auto;
+        border: 4px rgb(206, 160, 23) solid;
+        background-color: rgb(206, 160, 23);
+        border-radius: 13px;
+        padding: 4.5px 10px;
+        text-decoration: none;
+        color: aliceblue;
+      }
+    
+main section.stock hr,
+main section.merch hr {
+  border: rgb(206, 160, 23) 2px solid;
+  background-color: rgb(206, 160, 23);
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/*Footer---------------------------------*/
+footer {
+    background-color: rgb(48, 48, 48);
+    clear: both;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: aliceblue;
+  }
+    footer div {
+      padding: 2%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 1%;
+      font-family: 'Courier Prime', monospace;
+      font-size: 84%;
+    }
+    footer div ul {
+      list-style:none;
+      padding-left: 0%;
+      display: flex;
+      flex-direction: column;
+    }
+      footer div span {
+        display: block;
+        padding-right: 25px;
+      }
+        footer div:nth-child(1) span {
+          width: 260px;
+        }
+        footer div:nth-child(2) span {
+          padding-right: 160px;
+        }
+  
+    /* Reordenar y hacer aparecer las "flechitas" */
+    footer div ul li {
+      display: flex;
+    }
+      footer div ul li a {
+        order: 2;
+        text-decoration: none;
+        color: aliceblue;
+        text-align: left;
+      }
+      footer div ul li a ~ span.material-symbols-outlined {
+        font-size: small;
+        order: 1;
+        display: none;
+      }
+      footer div ul li a:hover ~ span,
+      footer div ul li a ~ span:hover {
+        display: contents;
+      }
+  
+    /* Formulario suscripción al noticiario */
+  
+  footer div ul li div input#on-click ~ label {
+    cursor: pointer;
+  }
+    footer div ul li div input#on-click ~ label:hover {
+      font-size: 95%;
+    }
+  
+  footer div ul li input#on-click {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 80%;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+  }
+  
+  footer div ul li div input#on-click:checked ~ label {
+    display: none;
+  }
+    footer div ul li div input#on-click:checked ~ form {
+      display: inline-block;
+    }
+    footer div ul li div form {
+      display: none;
+      width: 239px;
+    }
+    footer div ul li label {
+      display: flex;
+    }
+      footer div ul li label span {
+        font-size: 80% ;
+        padding: 0px;
+      }
+      
+    footer div ul li label input#email {
+      border: 0px;
+      margin: 0px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      /* Por algún motivo para que quede bien 
+      tengo que poner esta cantidad exagerada 
+      ni yo se por que ._. */
+      width: 2000%;
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 64%;
+      color: aliceblue;
+      margin-left: 2%;
+    }
+    footer div ul li label input#boton {
+      border: 0px;
+      margin: 0px;
+      margin-bottom: 3px;
+      padding: 0px;
+      cursor: pointer;
+      font-family: 'Dot Matrix', sans-serif;
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 82%;
+    }
+      footer div ul li label input#boton:hover {
+        font-size: 80%
+      }
+  
+  footer div ul li form {
+    display: flex;
+  }
+    footer div ul li form a {
+      text-decoration: underline;
+    }
+      footer div ul li form label {
+        cursor: pointer;
+        font-size: 110%;
+      } 
+      footer div ul li form label a:hover {
+        font-size: 96%
+      }
+    footer div ul li form input[type="checkbox"] {
+      margin-right: 7px;
+    }
+    

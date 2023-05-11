@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>GuitarStock</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/guitarstock_logo_G.png">
+    <!-- Link de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <!-- Link de la hoja de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header ---------------------------------------- -->
+    <header>
+        <nav>
+            <ul id="ul1">
+                <li>
+                    <div class="desplegable">
+                        <button><b>Tienda</b><span class="material-symbols-outlined">expand_more</span></button>
+                        <div class="desplegable-cont">
+                            <a class="a-desplegable" id="a1" href="./index.html#stock"><b>En Stock</b></a>
+                            <a class="a-desplegable" id="a2" href="./index.html#merch"><b>Merchandising</b></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desplegable">
+                        <button><b>Instrumentos</b><span class="material-symbols-outlined">expand_more</span></button>
+                        <div class="desplegable-cont">
+                            <a class="a-desplegable" id="a1" href="guitarras.html"><b>Guitarras Eléctricas</b></a>
+                            <a class="a-desplegable" id="a2" href="bajos.html"><b>Bajos Eléctricos</b></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="desplegable">
+                        <button><b>Servicios</b><span class="material-symbols-outlined">expand_more</span></button>
+                        <div class="desplegable-cont">
+                            <a class="a-desplegable" id="a1" href="./fabricación_artesanal.html"><b>Fabicación artesanal</b></a>
+                            <a class="a-desplegable" id="a2" href="./reparación_mantenimiento.html"><b>Reparaciones y mantenimiento</b></a>
+                            <a class="a-desplegable" id="a3" href="./pintura_modificacion.html"><b>Pintura y modificación</b></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <a href="./index.html"><img src="./img/guitarstock_logo_letras_sombra_2.png" alt="GuitarStock"></a>
+            </div>
+            <ul id="ul2">
+                <li><a href="#"><b>&nbsp Artistas<span id="wip">(WIP)</span> &nbsp</b></a></li>
+                <li><a href="#"><b>&nbsp Ayuda<span id="wip">(WIP)</span> &nbsp</b></a></li>
+                <li><a href="./contacto.html"><b id="c">&nbspContacto&nbsp</b></a></li>
+                <!-- <li><a href="#"><span class="material-symbols-outlined">&nbspshopping_cart </span></a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main ---------------------------------------- -->
+    <main>
+        <section class="titulo_contacto">
+            <img class="contacto" src="./img/portada-sr88-sorgina-guitarra_v2.jpg">
+            <div class="d_contacto">
+                    <h1>CONTACTO</h1>
+            </div>
+        </section>
+        <section class="cont" id="contacto">
+            <form action="" id="contacto">
+                <label for="opc">Seleciona el motivo<span>*</span></label><br>
+                <select name="opc" required >
+                    <option value="1">Precios/Presupuestos</option>
+                    <option value="2">Problemas tecnicos/Web</option>
+                    <option value="3">Información en general</option>
+                </select>
+                <br>
+                <label for="nombre">Nombre<span>*</span></label><br>
+                <input type="text" name="nombre" required>
+                <br>
+                <label for="email">Email<span>*</span></label><br>
+                <input type="email" name="email" required>
+                <br>
+                <label for="tlf">Número de Teléfono (Opcional)</label><br>
+                <input type="tel" name="tlf">
+                <br>
+                <label for="web">Página web (Opcional)</label><br>
+                <input type="text" name="web">
+                <br>
+                <label for="mensaje">Escribe aquí tu mensaje</label>
+                <textarea name="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <label id="politica" for="politica">Has leido nuestra política de <a href="#">privacidad</a><span>*</span></label>
+                <input id="politica" type="checkbox" name="politica" value="acepto" required>
+                <br>
+                <input id="enviar" type="submit" name="Enviar" value="Enviar">
+            </form>
+        </section>
+        <section class="map" id="map">
+            <div>
+                <h3>¿Donde estamos?</h3>
+                <hr>
+                <p>Av. Dr. Oloriz, 6, 18012 Granada, Spain</p>
+                <p>Teléfono: 651 04 41 92</p>
+                <img src="./img/guitarstock_logo_completo.png" alt="GuitarStock_Logo">
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=1200&amp;height=545&amp;hl=en&amp;q=Escuela Arte granada&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <style>
+                    .mapouter{position:relative;text-align:right;width:100%;height:500px;}
+                    .gmap_canvas {overflow:hidden;width:100%;height:550px;}
+                    .gmap_iframe {height:500px;}
+                </style>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer ---------------------------------------- -->
+    <footer>
+        <div>
+            <span>Servicios</span>
+            <ul>
+                <li><a href="./fabricación_artesanal.html">Fabricación artesanal</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="./pintura_modificacion.html">Pintura y personalización</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="./reparación_mantenimiento.html">Reparación y mantenimiento</a><span class="material-symbols-outlined">chevron_right</span></li>
+            </ul>
+        </div>
+        <div>
+            <span>Soporte</span>
+            <ul>
+                <li><a href="./index.html#titulo_d">Quienes somos</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="./contacto.html">Contacta con nosotros</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="./contacto.html#map">Encontrar tienda</a><span class="material-symbols-outlined">chevron_right</span></li>
+            </ul>
+        </div>
+        <div>
+            <span>Redes Sociales</span>
+            <ul>
+                <li><a href="https://www.youtube.com/" target="_blank">Youtube</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="https://facebook.com/" target="_blank">Facebook</a><span class="material-symbols-outlined">chevron_right</span></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a><span class="material-symbols-outlined">chevron_right</span></li>
+            </ul>
+        </div>
+        <div>
+            <span>Suscribete al noticiario</span>
+            <ul>
+                <li>
+                    <div>
+                        <input id="on-click" type="checkbox"><label for="on-click">[ Correo Electronico ]</label></input>
+                        <form name="Suscripción" action="#">
+                            <label for="email">
+                                <span>[</span>
+                                <input auto style="color: aliceblue;" id="email" type="email" placeholder="Correo Electronico" value="" required>
+                                <input id="boton" style="color: aliceblue;" type="submit" value="Suscribete">
+                                <span>]</span>
+                            </label>
+                            <label class="check_box" for="check_box"><input id="check_box" type="checkbox" value="acepto" required>
+                                <span>Has leido nuestra política de <a href="./soporte.html">privacidad</a></span>
+                            </label>
+                            <br>
+                            <label class="check_box" for="check_box2"><input id="check_box2" type="checkbox" value="acepto">
+                                <span>Acepto recibir notificaciones de marketing</span>
+                            </label>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
